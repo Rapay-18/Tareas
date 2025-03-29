@@ -1,11 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Viajes y Naturaleza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #2e3b4e;
+            color: white;
+            
+            
+            padding: 10px 20px;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-left: 70%;
+            display: inline-block;
+            
+        }
+        
+        nav li {
+            margin: 0 15px;
+            display: inline-block;
+            font-size: 20px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            color: lightblue;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        .c {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px black;
+            margin: 20px;
+            overflow: hidden;
+            transition: transform 0.5s;
+            display: inline-block;
+            width: 30%;
+            height: 30%;
+        }
+        
+        .c img {
+            width: 100%;
+            height: 550px;
+        }
+        
+        .c h2, .card p {
+            margin: 10px;
+        }
+        
+        .c:hover {
+            transform: scale(1.05);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        th {
+            background-color: #2e3b4e;
+            color: white;
+            padding: 10px;
+        }
+        
+        td {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #d1d1d1;
+        }
+        
+        tr:hover td {
+            background-color: #eaeaea;
+        }
+        
+        .H:hover th {
+            background-color: #3765cf;
+        }
+    </style>
 </head>
 <body>
-    <h1>Pagina Web</h1>
+    <header>
+        <h1>Viajes y Naturaleza</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Destinos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="c">
+            <img src="https://images.pexels.com/photos/30037797/pexels-photo-30037797/free-photo-of-paisaje-invernal-espectacular-de-los-bosques-nevados-de-morzine.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Paisajes de Montaña">
+            <h2>Paisajes de Montaña</h2>
+            <p>Impresionantes vistas de cordilleras y picos nevados.</p>
+        </div>
+        <div class="c">
+            <img src="https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bosques Misteriosos">
+            <h2>Bosques Misteriosos</h2>
+            <p>Explorando la tranquilidad de los bosques antiguos.</p>
+        </div>
+        <div class="c">
+            <img src="https://images.pexels.com/photos/20219772/pexels-photo-20219772/free-photo-of-mar-playa-saludar-despedirse.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Costas Paradisíacas">
+            <h2>Costas Paradisíacas</h2>
+            <p>Playas de arena blanca y aguas cristalinas.</p>
+        </div>
+        <table>
+            <thead>
+                <tr class="H">
+                    <th>Destino</th>
+                    <th>País</th>
+                    <th>Dificultad</th>
+                    <th>Temporada Recomendada</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Machu Picchu</td>
+                    <td>Perú</td>
+                    <td>Alta</td>
+                    <td>Mayo - Septiembre</td>
+                </tr>
+                <tr>
+                    <td>Glaciares de Patagonia</td>
+                    <td>Argentina</td>
+                    <td>Media</td>
+                    <td>Diciembre - Febrero</td>
+                </tr>
+                <tr>
+                    <td>Islas Galápagos</td>
+                    <td>Ecuador</td>
+                    <td>Baja</td>
+                    <td>Todo el año</td>
+                </tr>
+                <tr>
+                    <td>Torres del Paine</td>
+                    <td>Chile</td>
+                    <td>Alta</td>
+                    <td>Noviembre - Marzo</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 </body>
 </html>
